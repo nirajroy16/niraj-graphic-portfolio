@@ -137,122 +137,44 @@
           </p>
         </div>
 
-        <div class="work-grid">
-          <article class="work-card feature reveal">
-            <div class="work-image portrait-image cutout-image">
-              <img src="/assets/work/evaly-water-cropped.jpg" alt="Evaly luxury water bottle packaging by Niraj Roy" />
-            </div>
-            <div class="work-content">
-              <p>Water Bottle Label</p>
-              <h3>Evaly Luxury Water</h3>
-              <span>
-                Premium red label system for a compact water bottle with brand mark, QR placement, regulatory text,
-                barcode, FSSAI details, and high-contrast shelf visibility.
-              </span>
-              <div class="tag-row">
-                <span>Label Design</span>
-                <span>FMCG</span>
-                <span>Print Layout</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="work-card reveal delay-1">
-            <div class="work-image cutout-image">
-              <img src="/assets/work/binsol-peacock-saunf.webp" alt="Binsol Peacock Saunf spice pouch packaging" />
-            </div>
-            <div class="work-content">
-              <p>Spice Packaging</p>
-              <h3>Binsol Peacock Saunf</h3>
-              <span>
-                Bright retail pouch design using green freshness cues, peacock illustration, premium-quality badge,
-                and category-forward typography for quick product recognition.
-              </span>
-              <div class="tag-row">
-                <span>Pouch</span>
-                <span>Spices</span>
-                <span>Retail</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="work-card reveal delay-2">
-            <div class="work-image cutout-image">
-              <img src="/assets/work/fresho-handwash.jpg" alt="Fresho hand wash packaging label" />
-            </div>
-            <div class="work-content">
-              <p>Home Care</p>
-              <h3>Fresho Clean Hand Wash</h3>
-              <span>
-                Fresh green hygiene packaging with bold product naming, benefit callout, natural ingredient cues,
-                and high-impact cleaning category styling.
-              </span>
-              <div class="tag-row">
-                <span>Label</span>
-                <span>Home Care</span>
-                <span>Mockup</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="work-card landscape reveal">
-            <div class="work-image landscape-image cutout-image">
-              <img src="/assets/work/fresho-clean-range.jpg" alt="Fresho Clean product range packaging" />
-            </div>
-            <div class="work-content">
-              <p>Product Range</p>
-              <h3>Fresho Clean Range</h3>
-              <span>
-                Multi-product visual system for dish wash, floor cleaner, and glass cleaner, balancing variant colors,
-                product clarity, and promotional freshness.
-              </span>
-              <div class="tag-row">
-                <span>Range Design</span>
-                <span>Campaign Visual</span>
-                <span>Home Care</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="work-card reveal delay-1">
-            <div class="work-image">
-              <img src="/assets/work/tae-bari-premium-tea.jpg" alt="Tae Bari premium tea packaging" />
-            </div>
-            <div class="work-content">
-              <p>Tea Packaging</p>
-              <h3>Tae Bari Premium Tea</h3>
-              <span>
-                Warm, traditional tea pouch design with textured pack treatment, cup visual, tea leaf cues, and a
-                distinct brand badge for premium shelf appeal.
-              </span>
-              <div class="tag-row">
-                <span>Tea</span>
-                <span>Identity</span>
-                <span>Pouch</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="work-card wide reveal delay-2">
-            <div class="work-image landscape-image cutout-image">
-              <img src="/assets/work/tae-bari-orthodox-tea.jpg" alt="Tae Bari orthodox tea front and back packaging" />
-            </div>
-            <div class="work-content">
-              <p>Premium Tea System</p>
-              <h3>Tae Bari Orthodox Tea</h3>
-              <span>
-                Front-and-back pouch design with illustration-led storytelling, origin cues, health-benefit hierarchy,
-                certifications, contact details, and print-ready information architecture.
-              </span>
-              <div class="tag-row">
-                <span>Front & Back Pack</span>
-                <span>Illustration</span>
-                <span>Brand System</span>
-              </div>
-            </div>
-          </article>
+        <div class="work-toolbar reveal">
+          <div class="filter-bar" id="workFilters" aria-label="Filter packaging projects"></div>
+          <span class="gallery-hint">Swipe or scroll to view more projects</span>
         </div>
+
+        <div class="work-gallery" id="workGallery" aria-live="polite"></div>
       </section>
+
+      <div class="project-modal" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+        <div class="project-modal-backdrop" data-modal-close></div>
+        <div class="project-dialog">
+          <button class="modal-close" type="button" aria-label="Close project details" data-modal-close>
+            <span></span>
+            <span></span>
+          </button>
+          <div class="project-detail-media">
+            <img id="modalImage" src="" alt="" />
+          </div>
+          <div class="project-detail-copy">
+            <div class="client-badge modal-brand">
+              <small>Client Brand</small>
+              <strong id="modalClient"></strong>
+            </div>
+            <p class="eyebrow" id="modalCategory"></p>
+            <h2 id="modalTitle"></h2>
+            <p id="modalDescription"></p>
+            <div class="detail-block">
+              <h3>Design Challenge</h3>
+              <p id="modalChallenge"></p>
+            </div>
+            <div class="detail-block">
+              <h3>Tools Used</h3>
+              <div class="tag-row" id="modalTools"></div>
+            </div>
+            <button class="primary-btn modal-cta" type="button" data-modal-more>View More Work</button>
+          </div>
+        </div>
+      </div>
 
       <section id="experience" class="section-shell split-section">
         <div class="section-heading reveal">
