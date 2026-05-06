@@ -2,6 +2,91 @@ document.getElementById("year").textContent = new Date().getFullYear();
 
 const projects = [
   {
+    id: "mothers-magik-range",
+    title: "Mothers Magik Jar Label Range",
+    client: "Mothers Magik",
+    category: "Dry Fruits",
+    image: "/assets/work/mothers-magik-pasforan.jpg",
+    tags: ["FMCG", "Dry Fruits", "Spices", "Jar Label", "Range"],
+    description:
+      "A complete jar-label system for dry fruits, seeds, and spices using one shared brand structure with variant-specific colors and ingredient imagery.",
+    challenge:
+      "Keep every variant instantly recognizable while making the whole range feel like one branded product family on the shelf.",
+    tools: ["Photoshop", "Illustrator", "Variant System", "Jar Mockup", "Print Layout"],
+    slides: [
+      {
+        title: "Pasforan Jar Label",
+        category: "Spices",
+        image: "/assets/work/mothers-magik-pasforan.jpg",
+        tags: ["FMCG", "Spices", "Jar Label"],
+        description:
+          "Green spice label with dense ingredient photography, a central premium badge, and bold product naming for fast recognition.",
+        challenge:
+          "Balance multiple spice visuals on a curved jar surface without losing readability or brand recall.",
+      },
+      {
+        title: "Souff Jar Label",
+        category: "Spices",
+        image: "/assets/work/mothers-magik-souff.jpg",
+        tags: ["FMCG", "Spices", "Herbs"],
+        description:
+          "Fresh fennel variant with green tones, ingredient texture, and the same reusable range architecture.",
+        challenge:
+          "Make a familiar spice feel fresh while retaining the category cues buyers expect.",
+      },
+      {
+        title: "Pista Jar Label",
+        category: "Dry Fruits",
+        image: "/assets/work/mothers-magik-pista.jpg",
+        tags: ["FMCG", "Dry Fruits", "Premium Label"],
+        description:
+          "Pistachio variant with soft cream tones, product-led imagery, and a clean premium shelf look.",
+        challenge:
+          "Keep the product variant prominent while preserving enough whitespace for a dry-fruit category feel.",
+      },
+      {
+        title: "Cashew Jar Label",
+        category: "Dry Fruits",
+        image: "/assets/work/mothers-magik-cashew.jpg",
+        tags: ["FMCG", "Dry Fruits", "Jar Label"],
+        description:
+          "Cashew label with warm cream tones, large product typography, and rich ingredient photography.",
+        challenge:
+          "Create a rich dry-fruit look while keeping brand mark, product name, and ingredient imagery in order.",
+      },
+      {
+        title: "Almond Jar Label",
+        category: "Dry Fruits",
+        image: "/assets/work/mothers-magik-almond.jpg",
+        tags: ["FMCG", "Dry Fruits", "Variant Design"],
+        description:
+          "Almond variant with warm orange color, large product naming, and ingredient-led visual composition.",
+        challenge:
+          "Differentiate the almond variant while keeping it clearly part of the same brand family.",
+      },
+      {
+        title: "Raisins Jar Label",
+        category: "Dry Fruits",
+        image: "/assets/work/mothers-magik-raisins.jpg",
+        tags: ["FMCG", "Dry Fruits", "Food Label"],
+        description:
+          "Raisins label focused on golden product imagery, soft shelf colors, and clear brand-to-product reading order.",
+        challenge:
+          "Use light tones without making the label look washed out while keeping the variant name sharp.",
+      },
+      {
+        title: "Magaj Jar Label",
+        category: "Dry Fruits",
+        image: "/assets/work/mothers-magik-magaj.jpg",
+        tags: ["FMCG", "Dry Fruits", "Seeds"],
+        description:
+          "Bold red seed-pack label using fruit cues and strong contrast so the variant is instantly noticeable.",
+        challenge:
+          "Make a niche product easy to identify while retaining the same range architecture as the other jars.",
+      },
+    ],
+  },
+  {
     id: "jivika-gold-atta",
     title: "Jivika Gold Chakki Atta",
     client: "Jivika Gold",
@@ -11,99 +96,8 @@ const projects = [
     description:
       "A family-size flour pack system with clear grain cues, weight hierarchy, quality markers, and strong shelf presence for grocery retail.",
     challenge:
-      "Build a premium atta pack that keeps product information readable while making the grain origin, purity claims, and pack size easy to scan.",
+      "Build a premium atta pack that keeps product information readable while making grain origin, purity claims, and pack size easy to scan.",
     tools: ["Photoshop", "Illustrator", "Packaging Mockup", "Print Layout"],
-  },
-  {
-    id: "mothers-magik-pasforan",
-    title: "Pasforan Jar Label",
-    client: "Mothers Magik",
-    category: "Spices",
-    image: "/assets/work/mothers-magik-pasforan.jpg",
-    tags: ["FMCG", "Spices", "Jar Label"],
-    description:
-      "A spice jar label using green category cues, ingredient photography, and a centered premium brand badge for quick retail recognition.",
-    challenge:
-      "Balance dense ingredient imagery with a bold product name so the label stays readable on a curved jar surface.",
-    tools: ["Photoshop", "Illustrator", "Label Design", "Mockup"],
-  },
-  {
-    id: "mothers-magik-souff",
-    title: "Souff Jar Label",
-    client: "Mothers Magik",
-    category: "Spices",
-    image: "/assets/work/mothers-magik-souff.jpg",
-    tags: ["FMCG", "Spices", "Herbs"],
-    description:
-      "Fresh green fennel packaging built around ingredient texture, product contrast, and a reusable visual language for the brand range.",
-    challenge:
-      "Make a familiar spice feel fresh without losing the traditional visual cues buyers expect in the category.",
-    tools: ["Photoshop", "Illustrator", "Color System", "Product Mockup"],
-  },
-  {
-    id: "mothers-magik-pista",
-    title: "Pista Jar Label",
-    client: "Mothers Magik",
-    category: "Dry Fruits",
-    image: "/assets/work/mothers-magik-pista.jpg",
-    tags: ["FMCG", "Dry Fruits", "Premium Label"],
-    description:
-      "A bright dry-fruit label with pistachio imagery, soft cream tones, and a consistent brand header for range extension.",
-    challenge:
-      "Keep the product variant prominent while preserving enough premium whitespace for a clean dry-fruits shelf look.",
-    tools: ["Photoshop", "Illustrator", "Variant System", "Jar Mockup"],
-  },
-  {
-    id: "mothers-magik-cashew",
-    title: "Cashew Jar Label",
-    client: "Mothers Magik",
-    category: "Dry Fruits",
-    image: "/assets/work/mothers-magik-cashew.jpg",
-    tags: ["FMCG", "Dry Fruits", "Jar Label"],
-    description:
-      "A cashew variant label with warm cream tones, large product typography, and rich ingredient photography for premium recall.",
-    challenge:
-      "Create a rich dry-fruit look while keeping the brand mark, product name, and appetizing product imagery in a clean hierarchy.",
-    tools: ["Photoshop", "Illustrator", "Photo Compositing", "Mockup"],
-  },
-  {
-    id: "mothers-magik-almond",
-    title: "Almond Jar Label",
-    client: "Mothers Magik",
-    category: "Dry Fruits",
-    image: "/assets/work/mothers-magik-almond.jpg",
-    tags: ["FMCG", "Dry Fruits", "Variant Design"],
-    description:
-      "An almond pack variant with warm orange category color, large product naming, and ingredient-led visual composition.",
-    challenge:
-      "Differentiate the almond variant from the rest of the range while keeping it clearly part of the same brand family.",
-    tools: ["Photoshop", "Illustrator", "Packaging System", "Mockup"],
-  },
-  {
-    id: "mothers-magik-raisins",
-    title: "Raisins Jar Label",
-    client: "Mothers Magik",
-    category: "Dry Fruits",
-    image: "/assets/work/mothers-magik-raisins.jpg",
-    tags: ["FMCG", "Dry Fruits", "Food Label"],
-    description:
-      "A raisins label focused on golden product imagery, soft shelf colors, and a clear brand-to-product reading order.",
-    challenge:
-      "Use light tones without making the label look washed out, while keeping the variant name sharp and visible.",
-    tools: ["Photoshop", "Illustrator", "Image Treatment", "Mockup"],
-  },
-  {
-    id: "mothers-magik-magaj",
-    title: "Magaj Jar Label",
-    client: "Mothers Magik",
-    category: "Dry Fruits",
-    image: "/assets/work/mothers-magik-magaj.jpg",
-    tags: ["FMCG", "Dry Fruits", "Seeds"],
-    description:
-      "A bold red seed-pack label that uses fruit cues and strong contrast to make the variant instantly noticeable.",
-    challenge:
-      "Make a niche product variant easy to identify while retaining the same range architecture as the other jars.",
-    tools: ["Photoshop", "Illustrator", "Variant Design", "Mockup"],
   },
   {
     id: "xuwola-tea",
@@ -130,6 +124,64 @@ const projects = [
     challenge:
       "Handle both storytelling and compliance information without making the premium tea pouch feel cluttered.",
     tools: ["Photoshop", "Illustrator", "Information Design", "Print Layout"],
+    slides: [
+      {
+        title: "TAE-BARI Orthodox Tea",
+        category: "Tea",
+        image: "/assets/work/tae-bari-orthodox-new.jpg",
+        tags: ["Tea", "Pouch", "Brand System"],
+        description:
+          "Front-and-back orthodox tea pouch showing product story, benefits, contact block, and compliance hierarchy.",
+        challenge:
+          "Organize all back-panel information without breaking the premium visual identity.",
+      },
+      {
+        title: "TAE-BARI Premium Tea",
+        category: "Tea",
+        image: "/assets/work/tae-bari-premium-new.jpg",
+        tags: ["Tea", "Premium Pack", "Mockup"],
+        description:
+          "Premium tea pouch mockup with warm material texture, brand badge, tea-cup visual, and garden cues.",
+        challenge:
+          "Create a simple premium pack face that feels traditional but still clean enough for modern retail.",
+      },
+      {
+        title: "TAE-BARI Premium Tea Concept",
+        category: "Tea",
+        image: "/assets/work/tae-bari-premium-tea.jpg",
+        tags: ["Tea", "Identity", "Pouch"],
+        description:
+          "Earlier tea-pack direction using warm tones, cup imagery, and a prominent brand badge.",
+        challenge:
+          "Keep the old tea identity recognizable while improving hierarchy and shelf presence.",
+      },
+    ],
+  },
+  {
+    id: "evaly-water",
+    title: "Evaly Luxury Water",
+    client: "Evaly",
+    category: "FMCG",
+    image: "/assets/work/evaly-water-cropped.jpg",
+    tags: ["FMCG", "Label Design", "Print Layout"],
+    description:
+      "Premium red water-bottle label with brand mark, QR placement, regulatory text, barcode, FSSAI details, and high-contrast shelf visibility.",
+    challenge:
+      "Fit compliance details into a compact bottle label while keeping the design bold and premium.",
+    tools: ["Photoshop", "Illustrator", "Label Design", "Print Layout"],
+  },
+  {
+    id: "binsol-peacock-saunf",
+    title: "Binsol Peacock Saunf",
+    client: "Binsol",
+    category: "Spices",
+    image: "/assets/work/binsol-peacock-saunf.webp",
+    tags: ["FMCG", "Spices", "Pouch"],
+    description:
+      "Bright spice pouch design using green freshness cues, peacock illustration, premium-quality badge, and category-forward typography.",
+    challenge:
+      "Make a retail spice pouch look fresh and memorable while keeping the product name immediately readable.",
+    tools: ["Photoshop", "Illustrator", "Pouch Mockup", "Retail Packaging"],
   },
   {
     id: "fresho-clean",
@@ -141,8 +193,30 @@ const projects = [
     description:
       "A coordinated cleaning-product range balancing variant colors, hygiene cues, and clear product naming.",
     challenge:
-      "Make different home-care products feel like one family while giving every bottle its own clear category signal.",
+      "Make different home-care products feel like one family while giving every bottle its own category signal.",
     tools: ["Photoshop", "Illustrator", "Range System", "Mockup"],
+    slides: [
+      {
+        title: "Fresho Clean Range",
+        category: "Home Care",
+        image: "/assets/work/fresho-clean-range.jpg",
+        tags: ["Home Care", "Range Design", "Mockup"],
+        description:
+          "Multi-product visual system for dish wash, floor cleaner, and glass cleaner with clear variant colors.",
+        challenge:
+          "Balance one brand system across different home-care product types.",
+      },
+      {
+        title: "Fresho Clean Hand Wash",
+        category: "Home Care",
+        image: "/assets/work/fresho-handwash.jpg",
+        tags: ["Home Care", "Label", "Mockup"],
+        description:
+          "Green hand-wash label with hygiene cues, product naming, benefit callouts, and fresh category styling.",
+        challenge:
+          "Make a single label stand out while still feeling connected to the wider Fresho Clean range.",
+      },
+    ],
   },
 ];
 
@@ -157,7 +231,14 @@ const modalTitle = document.getElementById("modalTitle");
 const modalDescription = document.getElementById("modalDescription");
 const modalChallenge = document.getElementById("modalChallenge");
 const modalTools = document.getElementById("modalTools");
+const modalCounter = document.getElementById("modalCounter");
+const modalThumbs = document.getElementById("modalThumbs");
+const modalThumbsWrap = document.getElementById("modalThumbsWrap");
+const carouselPrev = document.querySelector("[data-carousel-prev]");
+const carouselNext = document.querySelector("[data-carousel-next]");
 let activeFilter = "All";
+let activeProject = null;
+let activeSlideIndex = 0;
 let lastFocusedElement = null;
 
 const revealObserver =
@@ -175,6 +256,15 @@ const revealObserver =
       )
     : null;
 
+function getSlides(project) {
+  return project.slides && project.slides.length ? project.slides : [project];
+}
+
+function getProjectTags(project) {
+  const slideTags = getSlides(project).flatMap((slide) => slide.tags || []);
+  return [...new Set([project.category, ...project.tags, ...slideTags])];
+}
+
 function observeRevealItems(scope = document) {
   const items = scope.querySelectorAll(".reveal:not(.is-visible)");
 
@@ -186,7 +276,7 @@ function observeRevealItems(scope = document) {
 }
 
 function projectMatchesFilter(project) {
-  return activeFilter === "All" || project.category === activeFilter || project.tags.includes(activeFilter);
+  return activeFilter === "All" || getProjectTags(project).includes(activeFilter);
 }
 
 function createTagMarkup(tags) {
@@ -209,11 +299,15 @@ function renderGallery() {
   const visibleProjects = projects.filter(projectMatchesFilter);
 
   gallery.innerHTML = visibleProjects
-    .map(
-      (project, index) => `
+    .map((project, index) => {
+      const count = getSlides(project).length;
+      const countLabel = count > 1 ? `<span class="project-count">${count} images</span>` : "";
+
+      return `
         <article class="work-card reveal ${index % 3 === 1 ? "delay-1" : index % 3 === 2 ? "delay-2" : ""}">
           <button class="work-card-button" type="button" data-project-id="${project.id}">
             <div class="work-image">
+              ${countLabel}
               <img src="${project.image}" alt="${project.title} packaging mockup by Niraj Roy" loading="lazy" />
             </div>
             <div class="work-content">
@@ -227,8 +321,8 @@ function renderGallery() {
             </div>
           </button>
         </article>
-      `
-    )
+      `;
+    })
     .join("");
 
   gallery.querySelectorAll("[data-project-id]").forEach((card) => {
@@ -238,19 +332,75 @@ function renderGallery() {
   observeRevealItems(gallery);
 }
 
+function renderThumbs(project) {
+  const slides = getSlides(project);
+  modalThumbsWrap.hidden = slides.length <= 1;
+  modalThumbs.innerHTML = slides
+    .map(
+      (slide, index) => `
+        <button class="carousel-thumb${index === activeSlideIndex ? " is-active" : ""}" type="button" data-slide-index="${index}">
+          <img src="${slide.image}" alt="${slide.title}" />
+          <span>${slide.title}</span>
+        </button>
+      `
+    )
+    .join("");
+}
+
+function updateCarouselControls(project) {
+  const hasMultipleSlides = getSlides(project).length > 1;
+  carouselPrev.hidden = !hasMultipleSlides;
+  carouselNext.hidden = !hasMultipleSlides;
+  modalCounter.hidden = !hasMultipleSlides;
+}
+
+function updateModalSlide() {
+  if (!activeProject) return;
+
+  const slides = getSlides(activeProject);
+  const slide = slides[activeSlideIndex];
+  const tags = slide.tags || activeProject.tags;
+
+  modalImage.src = slide.image;
+  modalImage.alt = `${slide.title} packaging mockup`;
+  modalClient.textContent = activeProject.client;
+  modalCategory.textContent = slide.category || activeProject.category;
+  modalTitle.textContent = slide.title || activeProject.title;
+  modalDescription.textContent = slide.description || activeProject.description;
+  modalChallenge.textContent = slide.challenge || activeProject.challenge;
+  modalTools.innerHTML = createTagMarkup(activeProject.tools);
+  modalCounter.textContent = `${activeSlideIndex + 1} / ${slides.length}`;
+  renderThumbs(activeProject);
+
+  modalThumbs.querySelectorAll("[data-slide-index]").forEach((thumb) => {
+    thumb.addEventListener("click", () => {
+      activeSlideIndex = Number(thumb.dataset.slideIndex);
+      updateModalSlide();
+    });
+  });
+
+  modal.querySelector(".detail-block .tag-row").innerHTML = createTagMarkup(activeProject.tools);
+  modal.querySelectorAll(".project-detail-copy > .tag-row").forEach((row) => row.remove());
+  modalTitle.insertAdjacentHTML("afterend", `<div class="tag-row modal-tags">${createTagMarkup(tags)}</div>`);
+}
+
+function moveSlide(direction) {
+  if (!activeProject) return;
+
+  const slides = getSlides(activeProject);
+  activeSlideIndex = (activeSlideIndex + direction + slides.length) % slides.length;
+  updateModalSlide();
+}
+
 function openProject(projectId) {
   const project = projects.find((item) => item.id === projectId);
   if (!project) return;
 
   lastFocusedElement = document.activeElement;
-  modalImage.src = project.image;
-  modalImage.alt = `${project.title} packaging mockup`;
-  modalClient.textContent = project.client;
-  modalCategory.textContent = project.category;
-  modalTitle.textContent = project.title;
-  modalDescription.textContent = project.description;
-  modalChallenge.textContent = project.challenge;
-  modalTools.innerHTML = createTagMarkup(project.tools);
+  activeProject = project;
+  activeSlideIndex = 0;
+  updateCarouselControls(project);
+  updateModalSlide();
 
   modal.hidden = false;
   document.body.classList.add("modal-open");
@@ -265,6 +415,8 @@ function closeProject() {
   window.setTimeout(() => {
     modal.hidden = true;
     modalImage.src = "";
+    activeProject = null;
+    activeSlideIndex = 0;
     if (lastFocusedElement) lastFocusedElement.focus();
   }, 220);
 }
@@ -289,9 +441,20 @@ modal.addEventListener("click", (event) => {
   }
 });
 
+carouselPrev.addEventListener("click", () => moveSlide(-1));
+carouselNext.addEventListener("click", () => moveSlide(1));
+
 document.addEventListener("keydown", (event) => {
   if (event.key === "Escape" && !modal.hidden) {
     closeProject();
+  }
+
+  if (event.key === "ArrowLeft" && !modal.hidden) {
+    moveSlide(-1);
+  }
+
+  if (event.key === "ArrowRight" && !modal.hidden) {
+    moveSlide(1);
   }
 });
 
