@@ -139,7 +139,14 @@
 
         <div class="work-toolbar reveal">
           <div class="filter-bar" id="workFilters" aria-label="Filter packaging projects"></div>
-          <span class="gallery-hint">Swipe or scroll to view more projects</span>
+          <div class="gallery-controls" aria-label="Gallery controls">
+            <button class="gallery-arrow" type="button" aria-label="Previous projects" data-gallery-prev>
+              <span>‹</span>
+            </button>
+            <button class="gallery-arrow" type="button" aria-label="Next projects" data-gallery-next>
+              <span>›</span>
+            </button>
+          </div>
         </div>
 
         <div class="work-gallery" id="workGallery" aria-live="polite"></div>
@@ -265,22 +272,38 @@
 
       <section id="certificate" class="section-shell certificate-section">
         <div class="certificate-card reveal">
-          <div>
-            <p class="eyebrow">Certification</p>
-            <h2>MAAC certification and design foundation.</h2>
-            <p>
-              Certification link is connected through Google Drive. This validates formal creative training alongside
-              production experience in packaging, branding, and marketing design.
-            </p>
+          <div class="certificate-preview" aria-label="MAAC certification preview">
+            <div class="certificate-paper">
+              <span>MAAC</span>
+              <strong>Graphic Design Certification</strong>
+              <p>Formal training in design tools, digital artwork, visual communication, and production-focused creative workflows.</p>
+              <div>
+                <small>Verified via Google Drive</small>
+                <small>Design Foundation</small>
+              </div>
+            </div>
           </div>
-          <a
-            class="secondary-btn"
-            href="https://drive.google.com/file/d/1I5Uyq7UAqdPsjzT_pbglVGQ_eW5Av8UI/view?usp=sharing"
-            target="_blank"
-            rel="noreferrer"
-          >
-            View Certificate
-          </a>
+          <div class="certificate-copy">
+            <p class="eyebrow">Certification</p>
+            <h2>Formal MAAC training supporting real packaging work.</h2>
+            <p>
+              The MAAC certification gives visitors a clear education signal, while the portfolio work shows how that
+              foundation is applied across packaging, branding, mockups, and print-ready artwork.
+            </p>
+            <div class="certificate-points">
+              <span>Adobe workflow</span>
+              <span>Visual design foundation</span>
+              <span>Production artwork</span>
+            </div>
+            <a
+              class="secondary-btn"
+              href="https://drive.google.com/file/d/1I5Uyq7UAqdPsjzT_pbglVGQ_eW5Av8UI/view?usp=sharing"
+              target="_blank"
+              rel="noreferrer"
+            >
+              View Verified Certificate
+            </a>
+          </div>
         </div>
       </section>
 

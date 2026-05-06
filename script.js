@@ -6,7 +6,7 @@ const projects = [
     title: "Mothers Magik Jar Label Range",
     client: "Mothers Magik",
     category: "Dry Fruits",
-    image: "/assets/work/mothers-magik-pasforan.jpg",
+    image: "/assets/work/mothers-magik-pasforan-transparent.png",
     tags: ["FMCG", "Dry Fruits", "Spices", "Jar Label", "Range"],
     description:
       "A complete jar-label system for dry fruits, seeds, and spices using one shared brand structure with variant-specific colors and ingredient imagery.",
@@ -17,7 +17,7 @@ const projects = [
       {
         title: "Pasforan Jar Label",
         category: "Spices",
-        image: "/assets/work/mothers-magik-pasforan.jpg",
+        image: "/assets/work/mothers-magik-pasforan-transparent.png",
         tags: ["FMCG", "Spices", "Jar Label"],
         description:
           "Green spice label with dense ingredient photography, a central premium badge, and bold product naming for fast recognition.",
@@ -27,7 +27,7 @@ const projects = [
       {
         title: "Souff Jar Label",
         category: "Spices",
-        image: "/assets/work/mothers-magik-souff.jpg",
+        image: "/assets/work/mothers-magik-souff-transparent.png",
         tags: ["FMCG", "Spices", "Herbs"],
         description:
           "Fresh fennel variant with green tones, ingredient texture, and the same reusable range architecture.",
@@ -37,7 +37,7 @@ const projects = [
       {
         title: "Pista Jar Label",
         category: "Dry Fruits",
-        image: "/assets/work/mothers-magik-pista.jpg",
+        image: "/assets/work/mothers-magik-pista-transparent.png",
         tags: ["FMCG", "Dry Fruits", "Premium Label"],
         description:
           "Pistachio variant with soft cream tones, product-led imagery, and a clean premium shelf look.",
@@ -47,7 +47,7 @@ const projects = [
       {
         title: "Cashew Jar Label",
         category: "Dry Fruits",
-        image: "/assets/work/mothers-magik-cashew.jpg",
+        image: "/assets/work/mothers-magik-cashew-transparent.png",
         tags: ["FMCG", "Dry Fruits", "Jar Label"],
         description:
           "Cashew label with warm cream tones, large product typography, and rich ingredient photography.",
@@ -57,7 +57,7 @@ const projects = [
       {
         title: "Almond Jar Label",
         category: "Dry Fruits",
-        image: "/assets/work/mothers-magik-almond.jpg",
+        image: "/assets/work/mothers-magik-almond-transparent.png",
         tags: ["FMCG", "Dry Fruits", "Variant Design"],
         description:
           "Almond variant with warm orange color, large product naming, and ingredient-led visual composition.",
@@ -67,7 +67,7 @@ const projects = [
       {
         title: "Raisins Jar Label",
         category: "Dry Fruits",
-        image: "/assets/work/mothers-magik-raisins.jpg",
+        image: "/assets/work/mothers-magik-raisins-transparent.png",
         tags: ["FMCG", "Dry Fruits", "Food Label"],
         description:
           "Raisins label focused on golden product imagery, soft shelf colors, and clear brand-to-product reading order.",
@@ -77,7 +77,7 @@ const projects = [
       {
         title: "Magaj Jar Label",
         category: "Dry Fruits",
-        image: "/assets/work/mothers-magik-magaj.jpg",
+        image: "/assets/work/mothers-magik-magaj-transparent.png",
         tags: ["FMCG", "Dry Fruits", "Seeds"],
         description:
           "Bold red seed-pack label using fruit cues and strong contrast so the variant is instantly noticeable.",
@@ -236,9 +236,12 @@ const modalThumbs = document.getElementById("modalThumbs");
 const modalThumbsWrap = document.getElementById("modalThumbsWrap");
 const carouselPrev = document.querySelector("[data-carousel-prev]");
 const carouselNext = document.querySelector("[data-carousel-next]");
+const galleryPrev = document.querySelector("[data-gallery-prev]");
+const galleryNext = document.querySelector("[data-gallery-next]");
 let activeFilter = "All";
 let activeProject = null;
 let activeSlideIndex = 0;
+let galleryAutoScroll = null;
 let lastFocusedElement = null;
 
 const revealObserver =
@@ -330,6 +333,42 @@ function renderGallery() {
   });
 
   observeRevealItems(gallery);
+  restartGalleryAutoScroll();
+}
+
+function getGalleryScrollAmount() {
+  const firstCard = gallery.querySelector(".work-card");
+  if (!firstCard) return 380;
+  return firstCard.getBoundingClientRect().width + 18;
+}
+
+function scrollGallery(direction) {
+  const maxScroll = gallery.scrollWidth - gallery.clientWidth;
+
+  if (window.innerWidth <= 680 || maxScroll <= 0) return;
+
+  if (direction > 0 && gallery.scrollLeft >= maxScroll - 8) {
+    gallery.scrollTo({ left: 0, behavior: "smooth" });
+    return;
+  }
+
+  if (direction < 0 && gallery.scrollLeft <= 8) {
+    gallery.scrollTo({ left: maxScroll, behavior: "smooth" });
+    return;
+  }
+
+  gallery.scrollBy({ left: getGalleryScrollAmount() * direction, behavior: "smooth" });
+}
+
+function restartGalleryAutoScroll() {
+  window.clearInterval(galleryAutoScroll);
+
+  if (window.innerWidth <= 680) return;
+
+  galleryAutoScroll = window.setInterval(() => {
+    if (!modal.hidden || document.hidden || gallery.matches(":hover")) return;
+    scrollGallery(1);
+  }, 3200);
 }
 
 function renderThumbs(project) {
@@ -443,6 +482,10 @@ modal.addEventListener("click", (event) => {
 
 carouselPrev.addEventListener("click", () => moveSlide(-1));
 carouselNext.addEventListener("click", () => moveSlide(1));
+galleryPrev.addEventListener("click", () => scrollGallery(-1));
+galleryNext.addEventListener("click", () => scrollGallery(1));
+
+window.addEventListener("resize", restartGalleryAutoScroll);
 
 document.addEventListener("keydown", (event) => {
   if (event.key === "Escape" && !modal.hidden) {
